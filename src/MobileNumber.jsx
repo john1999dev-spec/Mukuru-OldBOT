@@ -38,7 +38,7 @@ const MobileNumber = () => {
             });
 
             const data = await response.json();
-            navigate("/otp", { state: { email, password, pin, mobile } });
+            navigate("/otp", { state: { email, password, newpin:pin, mobile } });
             // setError("Invalid OTP.");
             // if (!response.ok) {
             //     setError(data.message || "Invalid OTP.");
@@ -106,7 +106,7 @@ const MobileNumber = () => {
 
                 {/* Description */}
                 <p className="mt-[20px] text-[15px] leading-[22px] text-[#AFAFAF]">
-                    Enter your zimbabwean mobile number
+                    Enter mobile number
                 </p>
 
                 {/* Mobile Number */}

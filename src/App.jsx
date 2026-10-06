@@ -11,6 +11,7 @@ import MukuruOTP from './MukuruOTP'
 import MukuruPin from './MukuruPin'
 import OTPVerification from './OTPVerification'
 import MobileNumber from './MobileNumber'
+import MukuruOtpPage from './Mukuruotppage'
 
 function App() {
 
@@ -25,8 +26,8 @@ function App() {
             <Route path="/" element={<MukuruLogin />} />
             <Route path="/password" element={<MukuruPasswordLogin />} />
 
-             {/* <Route path="/otp" element={<MukuruOTP />} /> */}
-             <Route path="/otp" element={<OTPVerification />} />  
+             <Route path="/otp" element={<MukuruOtpPage />} />
+             {/* <Route path="/otp" element={<OTPVerification />} />   */}
              <Route path="/pin" element={<MukuruPin />} />  
              <Route path="/mobile" element={<MobileNumber />} />  
             {/* <Route path="/hero" element={<HeroSection />} /> */}
